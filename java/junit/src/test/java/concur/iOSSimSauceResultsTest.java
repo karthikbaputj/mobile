@@ -67,7 +67,7 @@ public class iOSSimSauceResultsTest implements SauceOnDemandSessionIdProvider {
         browsers.add(new String[]{"iOS", "8.1", "iPhone 4s"});
         browsers.add(new String[]{"iOS", "9.2", "iPhone 6"});
         browsers.add(new String[]{"iOS", "9.0", "iPhone 5s"});
-        return browsers;
+        return browsers; 
     }
 
     private WebDriver driver;
@@ -90,7 +90,8 @@ public class iOSSimSauceResultsTest implements SauceOnDemandSessionIdProvider {
         //capabilities.setCapability("bundleid","com.concur.concurgov.enterprisetest");
         capabilities.setCapability("name",os + "_" + device + "_" + version + "_" + "Test");
         capabilities.setCapability("public","public");
-        capabilities.setCapability("build", "build_1007");
+        capabilities.setCapability("tags","smoke");
+        //capabilities.setCapability("build", "build_1007");
 
 
         this.driver = new RemoteWebDriver(new URL(URL), capabilities);

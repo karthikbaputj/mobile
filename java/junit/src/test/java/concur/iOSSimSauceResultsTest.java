@@ -67,7 +67,7 @@ public class iOSSimSauceResultsTest implements SauceOnDemandSessionIdProvider {
         browsers.add(new String[]{"iOS", "8.1", "iPhone 4s"});
         browsers.add(new String[]{"iOS", "9.2", "iPhone 6"});
         browsers.add(new String[]{"iOS", "9.0", "iPhone 5s"});
-        return browsers;
+        return browsers; 
     }
 
     private WebDriver driver;

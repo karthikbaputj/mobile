@@ -43,7 +43,7 @@ public class iOSSimSauceResultsTest implements SauceOnDemandSessionIdProvider {
 
     private String device;
     private String os;
-    private String version;
+    private String version; 
     /**
      *
      */

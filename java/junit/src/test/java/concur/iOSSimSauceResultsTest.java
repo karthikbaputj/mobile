@@ -105,7 +105,7 @@ public class iOSSimSauceResultsTest implements SauceOnDemandSessionIdProvider {
     public void uiLoginLogout() throws Exception {
         driver.findElement(By.name("User name")).clear();
         driver.findElement(By.name("User name")).sendKeys("autoadmin@gsa-automation.gov");
-        driver.findElement(By.name("Password or Pin")).sendKeys("outtask1");
+        driver.findElement(By.name("Password or Pin")).sendKeys("dsdf");
         driver.findElement(By.name("Done")).click();
         driver.findElement(By.name("OK")).click();
         Assert.assertEquals("Planning your trip screen", "Start by planning your trip", driver.findElement(By.name("Start by planning your trip")).getText());

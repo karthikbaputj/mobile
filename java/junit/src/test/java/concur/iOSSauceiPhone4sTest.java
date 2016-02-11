@@ -51,7 +51,7 @@ public class iOSSauceiPhone4sTest {
     public void uiLogin() throws Exception {
         try {
             driver.findElement(By.name("User name")).sendKeys("autoadmin@gsa-automation.gov");
-            driver.findElement(By.name("Password or Pin")).sendKeys("outtask1");
+            driver.findElement(By.name("Password or Pin")).sendKeys("dsfsd");
             driver.findElement(By.name("Done")).click();
             Assert.assertEquals(driver.findElement(By.name("Privacy Act Notice")).getText(), "Privacy Act Notice");
             driver.findElement(By.name("OK")).click();
